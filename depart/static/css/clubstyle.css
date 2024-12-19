@@ -1,0 +1,139 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	background-image: url('');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: darken;
+}
+
+header {
+	color: rgb(255, 255, 255);
+	font-family: Impact;
+	background-color: #800000;
+}
+
+.abc {
+	display: flex;
+	align-items: flex-end;
+}
+
+.abc img {
+	width: 200px;
+	height: auto;
+	margin: 50px 125px;
+}
+
+.cde {
+	font-size: 75px;
+	margin: 25px -20px;
+}
+
+.fgh {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+#aa,#bb{
+	width: 350px;
+	height: auto;
+	border-radius: 500px;
+	margin: 0px 120px;
+}
+.zz {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+#xx,#yy{
+	width: 30%;
+	padding: 20px;
+	color: #000000;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 0 10px #000000;
+	border-radius: 10px;
+	margin:10px 80px;
+}
+.ss{
+	display: flex;
+	align-items: flex-end;
+	padding: 0px 2px;
+	justify-content: center;
+}
+#s1,#s2,#s3,#s4,#s5 {
+	width: 250px;
+	height: 350px;
+}
+.sss{
+	display: flex;
+	align-items: flex-end;
+	padding: 0px 20px;
+	justify-content: center;
+}
+#s6,#s7,#s8,#s9,#s0{
+	width: 250px;
+	height: 350px;
+}
+.ni{
+	margin: 0 500px;
+	font-size: 50px;
+	font-family: Impact;
+	padding: 5px 25px;
+}
+.cc{
+	display: flex;
+	align-items: flex-end;
+	padding: 0px 2px;
+	justify-content: center;
+}
+#c1,#c2,#c3,#c4,#c5 {
+	width: 250px;
+	height: 250px;
+	border-radius: 500px;
+	margin: 0 5px;
+}
+.post {
+	margin: 20px auto;
+	width: 1145px;
+	padding: 20px;
+	color: #000000;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 0 10px #000000;
+	border-radius: 10px;
+}
+
+.hh {
+	color: rgb(90, 0, 0);
+	font-family: Impact;
+	font-size: 50px;
+	margin: 35px 580px;
+}
+.ci {
+	color: rgb(90, 0, 0);
+	font-family: Impact;
+	font-size: 50px;
+	margin: 35px 520px;
+}
+
+.contact-button {
+	display: block;
+	width: 200px;
+	height: 50px;
+	margin: 20px auto;
+	background-color: #800000;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+	cursor: pointer;
+	border-radius: 15px;
+}
+.jj{
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin: 0 300px;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="{% static 'css/formstyle.css' %}">
+     
+    <!--Iconscout CSS-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Club Regisration Form </title> 
+</head>
+<body>
+    <div class="container">
+        
+        <header>Registration</header>
+
+        <form action="{% url 'register' %}" method="post">{% csrf_token %}
+            
+            
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title"></span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" name="registration_name" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" name="registration_dob" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" name="registration_email" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" name="registration_phone" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select name="registration_gender" required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Course</label>
+                            <input type="text" name="registration_course" placeholder="Enter your Course" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title"></span>
+                  
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Admission Number</label>
+                            <input type="text" name="registration_admission_no" placeholder="Enter Admission No." required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Section</label>
+                            <input type="number" name="registration_section" placeholder="Enter Section" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Course Year</label>
+                            <input type="text" name="registration_course_year" placeholder="Enter Year" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Skills</label>
+                            <input type="text" name="registration_skill"  placeholder="Enter your skills" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Profile  Picture</label>
+                            <input type="file" name="registration_profile" id="img" name="img" accept="image/*" required>
+                            <!-- <input type="image" placeholder="Enter expiry date" required> -->
+                        </div>
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Payment Details</span>
+
+                    <div class="fields">
+                        <input type="image" src="{% static 'image/bar.jpg' %}" alt="Submit" style="float:right" width="48" height="48">
+                        
+                    </div>
+                </div>
+                <div class="input-field">
+                    <label>Amount</label>
+                    <input type="text" value="30" readonly>
+                </div>
+
+                <div class="details family">
+                    <span class="title"></span>
+
+                    <div class="details family">
+                        <div class="input-field">
+                            <label>Payment Screenshort</label>
+                            <input type="file" id="img" name="registration_payment_image" accept="image/*" required>
+                            <!-- <input type="image" placeholder="Enter expiry date" required> -->
+                        </div>               
+                      
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                        <div class="hello">
+                        <button class="sumbit">
+                            <a class="btnText" role="button">Submit</a>
+                        </div>  
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+    <img src="{% static 'image/formlogo.jpg' %}" alt="GUSC Logo">
+    <script src="{% static 'js/formscript.js' %}"></script>
+</body>
+</html>
